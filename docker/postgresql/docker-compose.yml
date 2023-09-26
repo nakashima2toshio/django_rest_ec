@@ -3,7 +3,7 @@ services:
   postgres:
     image: postgres:latest
     hostname: postgres_host
-    container_name: postgres_django_container
+    container_name: postgres_django_ec_container
     environment:
       POSTGRES_PASSWORD: password  #スーパーユーザ(postgres)のパスワード
       POSTGRES_USER: admin         #ユーザアカウント
