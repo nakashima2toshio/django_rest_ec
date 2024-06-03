@@ -1,4 +1,4 @@
-##### （認証）dj_rest_auth　←　Django-rest-auth に伴い変更中
+##### （認証）dj_rest_auth　←　Django-rest-auth に伴い、認証関連は、更新中です。
 
 ### 概要
 ### 機能仕様書の構成
