@@ -10,7 +10,9 @@ get_queryset メソッドをオーバーライドして、認証されたユー�
 """
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
-from sns_app.models import Profile
+
+
+# from sns_app.models import Profile
 
 class CustomUserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -18,10 +20,11 @@ class CustomUserSerializer(serializers.ModelSerializer):
         fields = ['id', 'username', 'email', 'first_name', 'last_name']
         ref_name = 'API_CustomUser'
 
-class ProfileSerializer(serializers.ModelSerializer):
-    custom_user = CustomUserSerializer(read_only=True)
 
-    class Meta:
-        model = Profile
-        fields = ['custom_user', 'display_name', 'bio']
-        ref_name = 'APIProfile'
+# class ProfileSerializer(serializers.ModelSerializer):
+#     custom_user = CustomUserSerializer(read_only=True)
+#
+#     class Meta:
+#         model = Profile
+#         fields = ['custom_user', 'display_name', 'bio']
+#         ref_name = 'APIProfile'
