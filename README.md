@@ -16,6 +16,7 @@ To those who forked Django-rest-auth and are developing "dj_rest_auth", thank yo
 
 - (1) ER図
 - (2) API仕様書
+- (3) [プロジェクト概要](documents/Project_Overview.md)
 
 ### （１）ER図
 
